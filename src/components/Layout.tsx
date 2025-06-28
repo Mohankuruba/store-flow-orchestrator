@@ -14,14 +14,19 @@ const Layout = ({ children }: LayoutProps) => {
         <header className="h-16 flex items-center justify-between px-6 border-b bg-white/80 backdrop-blur-sm sticky top-0 z-40">
           <div className="flex items-center gap-4">
             <SidebarTrigger className="lg:hidden" />
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">GS</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 via-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg">S</span>
               </div>
-              <h1 className="text-xl font-semibold text-gray-900">General Store Manager</h1>
+              <div className="flex flex-col">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  SRM Mart
+                </h1>
+                <span className="text-xs text-gray-500 font-medium">Smart Retail Management</span>
+              </div>
             </div>
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-500 bg-gray-50 px-3 py-1 rounded-full border">
             {new Date().toLocaleDateString()}
           </div>
         </header>
