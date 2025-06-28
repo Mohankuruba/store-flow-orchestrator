@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Package, TrendingUp, AlertTriangle, DollarSign } from "lucide-react";
+import { Package, TrendingUp, AlertTriangle, IndianRupee } from "lucide-react";
 import { mockItems, mockOutgoingTransactions } from "@/data/mockData";
 import { useMemo } from "react";
 
@@ -61,7 +61,7 @@ const Dashboard = () => {
         <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium text-green-700">Inventory Value</CardTitle>
-            <DollarSign className="h-4 w-4 text-green-600" />
+            <IndianRupee className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-green-900">₹{stats.totalValue.toLocaleString()}</div>
